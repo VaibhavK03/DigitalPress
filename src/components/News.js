@@ -31,7 +31,7 @@ const News = (props) => {
   useEffect(() => {
     document.title = `${capitalizeFirstLetter(props.category)} - DigitalPress`;
     updateNews();
-  }, []);
+  }, [props.category, updateNews]);
 
   // const handlePrevClick = async () => {
   //   setPage(page - 1);
